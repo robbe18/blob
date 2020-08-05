@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello</title>
+    <style>
+        li {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            list-style: none;
+            display: inline-block;
+            padding-left: 25px;
+        }
+
+        nav {
+            text-align: right;
+            padding-right: 80px;
+
+        }
+
+        a, a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        td > input {
+            border: 1px solid;
+            border-color: lightgrey;
+            border-radius: 2px;
+            font-size: 13px;
+            height: 25px;
+            padding: 1px 8px;
+            width: 80%;
+        }
+
+        table{
+            width: 75%;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            padding-left: 100px;
+            padding-top: 50px;
+        }
+
+        td {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            
+        }
+
+        tr {
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 100%;
+        }
+
+        #advancedSearch {
+            text-align: center;
+            background-color: #4d90fe;
+            color: white;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            font-weight: bold;
+            margin: 11px 120px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 33px;
+            cursor: pointer;
+            width: 20%;
+            float: right;
+        }
+
+        #advancedSearch:hover {
+            background-color: #4787ed;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Google search</a>
+            </li>
+        </ul>
+    </nav>
+    <form action="https://google.com/search">
+        <table>
+            <tr>
+                <td style="font-size:large"> Find pages with… </td>
+            </tr>
+            <tr>
+                <td>all these words:</td>
+                <td>
+                
+                        <input id="searchBox" type="text" name="as_q">
+                
+                </td>
+            </tr>
+            <tr>
+                <td>this exact word or phrase:</td>
+                <td>
+                
+                        <input id="searchBox" type="text" name="as_epq">
+                
+                </td>
+            </tr>
+            <tr>
+                <td>any of these words:</td>
+                <td>
+                
+                        <input id="searchBox" type="text" name="as_oq">
+                
+                </td>
+            </tr>
+            <tr>
+                <td>none of these words:</td>
+                <td>
+                
+                        <input id="searchBox" type="text" name="as_eq">
+                
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    <input id="advancedSearch" type="submit" value="Advanced Search">
+                </td>
+            </tr>
+            
+        </table>
+
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search</title>
+    <style>
+
+        li {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            list-style: none;
+            display: inline-block;
+            padding-left: 25px;
+        }
+
+        nav {
+            text-align: right;
+            padding-right: 80px;
+        }
+
+        a, a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            margin-top: 150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #searchBox {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            padding-left: 30px;
+            display: block;
+            border: 1px solid;
+            border-color: lightgrey;
+            border-radius: 22px;
+            height: 38px;
+            width: 582px;
+            font-size: small;
+        }
+
+        center {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #googleSearch, #feelingLucky {
+            text-align: center;
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            margin: 8px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            cursor: pointer;
+            color: darkslategrey;
+        }
+
+            #googleSearch:hover, #feelingLucky:hover {
+                border: 1px solid;
+                border-color: lightgrey;
+            }
+    </style>
+</head>
+    <body>
+           <nav>
+               <ul>
+                    <li>
+                        <a href="google_imagesearch.html"> Image Search</a>
+                    </li>
+                    <li>
+                        <a href="google_advancedsearch.html"> Advanced Search</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <img src="google_logo.png" alt="logo" width="280">       
+                <form action="https://google.com/search">
+                    <input id="searchBox" type="text" name="q">
+                    <center>
+                        <input id="googleSearch" type="submit" name="btnK" value="Google Search">
+                        <input id="feelingLucky" type="submit" name="btnI" value="I'm feeling lucky">
+                    </center>
+                </form>
+    </body>
+</html>
